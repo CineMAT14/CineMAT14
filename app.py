@@ -17,7 +17,7 @@ SECRET_KEY = 'SPARTA'
 # DB에서 저장된 단어 찾아서 HTML에 나타내기
 @app.route('/')
 def home():
-    return render_template('/login.html')
+    return render_template('/main.html')
 
 # 극장 정보 GET API
 @app.route("/main/cinema", methods=["GET"])
