@@ -1,5 +1,5 @@
-### Hi there 👋
-
+<h1>🎬Cinemat🍴</h1>
+영화관 근처 맛집 서비스
 <!--
 **CineMAT14/CineMAT14** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
