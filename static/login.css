@@ -1,0 +1,22 @@
+.button.is-sparta {
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.button.is-sparta.is-outlined {
+    background-color: transparent;
+    border-color: black;
+    color: black;
+
+}
+
+.help {
+    color: gray;
+    font-weight: bold;
+}
+
+.box {
+    border: 2px solid;
+}
