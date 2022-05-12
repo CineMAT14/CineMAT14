@@ -34,8 +34,8 @@ function cinema_list() {
     });
 }
 
-function logout() {
-    $.removeCookie('mytoken', {path: '/'});
+function logout(){
+    $.removeCookie('mytoken', {path: '/'})
     alert('정상적으로 로그아웃 되었습니다.')
-    window.location.href = '/'
+    window.location.replace('/login')
 }
