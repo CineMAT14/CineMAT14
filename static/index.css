@@ -2,20 +2,20 @@
             font-family: 'Nanum Gothic', sans-serif;
         }
 
-        .mytitle {
-            width: 100%;
-            height: 100px;
-            color: white;
+        /*.mytitle {*/
+        /*    width: 100%;*/
+        /*    height: 100px;*/
+        /*    color: white;*/
 
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://home.postech.ac.kr/wp-content/uploads/2019/10/164-19-1.jpg');
-            background-position: center;
-            background-size: cover;
+        /*    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://home.postech.ac.kr/wp-content/uploads/2019/10/164-19-1.jpg');*/
+        /*    background-position: center;*/
+        /*    background-size: cover;*/
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    align-items: center;*/
+        /*    justify-content: center;*/
+        /*}*/
 
         .mylogo {
             margin: 10px auto 0px auto;
@@ -65,6 +65,11 @@
             height: 140px;
         }
 
+        .card-body {
+            margin: auto;
+            color: white;
+        }
+
         .card-body-header {
             text-align: center;
             margin: 10px 20px 0px 20px;
@@ -98,3 +103,39 @@
             display: block;
             text-align: end;
         }
+
+        button {
+            border: none;
+            outline: none;
+            color: black;
+            background-color: white;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .title {
+            /*font-size: 1.6rem;*/
+            display: grid;
+            place-items: center;
+            min-height: 200px;
+            border: 2px solid;
+            padding: 1rem;
+            border-color: black;
+            /*border-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%) 2 0;*/
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.chiswickcinema.co.uk/wp-content/uploads/2021/05/Untitled-design-22.jpg');
+            background-position: center 60%;
+            background-size: cover;
+
+        }
+
+
+        /*.title {*/
+        /*    !*background-color: black;*!*/
+        /*    !*border-image: linear-gradient(to bottom, turquoise, greenyellow) 0 1;*!*/
+
+        /*}*/
