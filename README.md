@@ -9,7 +9,7 @@
     <code>김주희</code> : 로그인 페이지 <br />
     <code>안은주</code> : 리뷰 페이지 <br />
 </p>
-
+<br>
 
 <h2 align="center">사용 기술</h2>
 
@@ -20,6 +20,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
 </p>
+<br>
 
 <h4>-프레임워크 / 플랫폼 / 라이브러리</h4>
 <p float="left">
@@ -29,9 +30,11 @@
 <img src="https://img.shields.io/badge/Jinja-7952B3?style=for-the-badge&logo=Jinja&logoColor=white">
 <img src="https://img.shields.io/badge/Flask-00ffff?style=for-the-badge&logo=Flask&logoColor=black">
 </p>
+<br>
 
 <h4>-에디터</h4>
 <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=brightgreen">
+<br>
 
 <h4>-협업툴</h4>
 <p float="left">
