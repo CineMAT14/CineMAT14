@@ -34,7 +34,7 @@
                                                     <p>총점 : ${star_image}</p>
                                                     <p>리뷰 : ${comment}</p>
                                                     <button onclick="delete_review(${num})" type="button" class="btn btn-danger" style="float: right; margin-left: 10px",>삭제</button>
-                                                    <button onclick="to_main()" type="button" class="btn btn-warning" style="float: right">홈</button>
+                                                    <button onclick="to_index()" type="button" class="btn btn-warning" style="float: right">홈</button>
                                                 </blockquote>
                                             </div>
                                         </div>`
@@ -93,6 +93,6 @@
         function close_box() {
             $('#post-box').hide()
         }
-        function to_main() {
+        function to_index() {
             window.location.href="/"
         }

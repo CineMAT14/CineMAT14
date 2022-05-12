@@ -15,25 +15,21 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 SECRET_KEY = 'SPARTA'
 
-# DB에서 저장된 단어 찾아서 HTML에 나타내기
+# HTML에 나타내기
 @app.route('/')
 def home():
     return render_template('/login.html')
 
-@app.route('/review')
-def main():
-    return render_template('/review.html')
+@app.route('/index/cinema')
+def index():
+    return render_template('/index.html')
 
 # 극장 정보 GET API
-@app.route("/main/cinema", methods=["GET"])
+@app.route("/index/cinema", methods=["GET"])
 def cinema():
     cinema_list = list(db.cinema.find({}, {'_id': False}))
-    # return jsonify({'cinema':cinema_list})
-    return render_template('/mainpage.html')
-<<<<<<< HEAD
+    return jsonify({'cinema':cinema_list})
 
-=======
->>>>>>> fbcea4c0ff4af83018c85271e6314e87937aea1e
 
 # review 저장하기 API
 @app.route("/review", methods=["POST"])
@@ -84,7 +80,7 @@ def give_token():
     try:
         payload = jwt.decode(token_receive, SECRET_KEY, algorithms=['HS256'])
         user_info = db.cine_users.find_one({"username": payload["id"]})
-        return render_template('main.html', user_info=user_info)
+        return render_template('index.html', user_info=user_info)
     except jwt.ExpiredSignatureError:
         return redirect(url_for("login", msg="로그인 시간이 만료되었습니다."))
     except (jwt.ExpiredSignatureError, jwt.exceptions.DecodeError):
