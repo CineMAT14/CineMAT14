@@ -8,6 +8,7 @@ import datetime
 import hashlib
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from datetime import datetime, timedelta
+from flask import redirect
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -19,11 +20,17 @@ SECRET_KEY = 'SPARTA'
 def home():
     return render_template('/login.html')
 
+@app.route('/review')
+def main():
+    return render_template('/review.html')
+
 # 극장 정보 GET API
 @app.route("/main/cinema", methods=["GET"])
 def cinema():
     cinema_list = list(db.cinema.find({}, {'_id': False}))
-    return jsonify({'cinema':cinema_list})
+    # return jsonify({'cinema':cinema_list})
+    return render_template('/mainpage.html')
+
 
 # review 저장하기 API
 @app.route("/review", methods=["POST"])
@@ -61,8 +68,8 @@ def review_delete():
 
 
 # reveiw 목록 보여주기 API
-@app.route("/review", methods=["GET"])
-def review_get():
+@app.route("/review<num>", methods=["GET"])
+def review_get(num):
     review_list = list(db.review.find({}, {'_id': False}))
     print(review_list)
     return jsonify({'reviews': review_list})

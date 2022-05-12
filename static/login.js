@@ -138,7 +138,7 @@ function sign_in() {
             if (response['result'] == 'success') {
                 $.cookie('mytoken', response['token'], {path: '/'});
                 alert('로그인 완료!')
-                window.location.replace("/")
+                window.location.replace("/main/cinema")
             } else {
                 alert(response['msg'])
             }
