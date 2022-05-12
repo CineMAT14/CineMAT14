@@ -30,7 +30,10 @@ def cinema():
     cinema_list = list(db.cinema.find({}, {'_id': False}))
     # return jsonify({'cinema':cinema_list})
     return render_template('/mainpage.html')
+<<<<<<< HEAD
 
+=======
+>>>>>>> fbcea4c0ff4af83018c85271e6314e87937aea1e
 
 # review 저장하기 API
 @app.route("/review", methods=["POST"])
@@ -81,7 +84,7 @@ def give_token():
     try:
         payload = jwt.decode(token_receive, SECRET_KEY, algorithms=['HS256'])
         user_info = db.cine_users.find_one({"username": payload["id"]})
-        return render_template('login.html', user_info=user_info)
+        return render_template('main.html', user_info=user_info)
     except jwt.ExpiredSignatureError:
         return redirect(url_for("login", msg="로그인 시간이 만료되었습니다."))
     except (jwt.ExpiredSignatureError, jwt.exceptions.DecodeError):
