@@ -18,11 +18,11 @@ SECRET_KEY = 'SPARTA'
 # HTML에 나타내기
 @app.route('/')
 def home():
-    return render_template('/login.html')
-
-@app.route('/index/cinema')
-def index():
     return render_template('/index.html')
+#
+# @app.route('/index/cinema')
+# def index():
+#     return render_template('/index.html')
 
 # 극장 정보 GET API
 @app.route("/index/cinema", methods=["GET"])

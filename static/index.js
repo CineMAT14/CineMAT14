@@ -36,6 +36,7 @@
         });
     }
 
+    //logout 후 login 페이지로
     function logout() {
         $.removeCookie('mytoken', {path: '/'})
         alert('정상적으로 로그아웃 되었습니다.')
