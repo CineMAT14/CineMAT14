@@ -1,60 +1,60 @@
-    * {
-        font-family: 'Gowun Dodum', sans-serif;
-    }
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
 
-    .mytitle {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
+.mytitle {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 
-        width: 95%;
-        margin-top: 20px;
+    width: 95%;
+    margin-top: 20px;
 
-    }
+}
 
-    .mytitle > img {
-        display: block;
-        margin: 0px auto 0px auto;
-    }
+.mytitle > img {
+    display: block;
+    margin: 0px auto 0px auto;
+}
 
-    .mypost {
-        width: 95%;
-        max-width: 500px;
-        margin: 15px auto 0px auto;
-        padding: 20px;
-        box-shadow: 0px 0px 3px 0px darkred;
+.mypost {
+    width: 95%;
+    max-width: 500px;
+    margin: 15px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px darkred;
 
-        border-radius: 20px;
+    border-radius: 20px;
 
-    }
+}
 
-    .mybtns {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
+.mybtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
 
-        margin-top: 20px;
-    }
+    margin-top: 20px;
+}
 
-    .mybtns > button {
-        margin-right: 10px;
-    }
+.mybtns > button {
+    margin-right: 10px;
+}
 
-    .mycards {
-        margin: 20px auto 0px auto;
-        width: 95%;
-        max-width: 600px;
-    }
+.mycards {
+    margin: 20px auto 0px auto;
+    width: 95%;
+    max-width: 600px;
+}
 
-    .card {
-        margin: 15px auto 15px auto;
-        box-shadow: 0px 0px 2px 0px darkred;
-    }
+.card {
+    margin: 15px auto 15px auto;
+    box-shadow: 0px 0px 2px 0px darkred;
+}
 
-    .input-group {
-        margin-top: 15px;
-    }
+.input-group {
+    margin-top: 15px;
+}
 
 

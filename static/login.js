@@ -136,9 +136,9 @@ function sign_in() {
         },
         success: function (response) {
             if (response['result'] == 'success') {
-                $.cookie('mytoken', response['token'], {path: '/'});
-                alert('로그인 완료!')
-                window.location.replace("/index/cinema")
+                $.cookie('mytoken', response['token']);
+                alert("로그인 완료!");
+                window.location.href = '/';
             } else {
                 alert(response['msg'])
             }
